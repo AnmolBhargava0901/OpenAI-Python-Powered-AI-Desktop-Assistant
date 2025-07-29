@@ -4,7 +4,7 @@ import pyttsx3
 import webbrowser
 import datetime
 from openai import OpenAI
-from config import apikey
+from config import apikey 
 import time
 
 chatStr = ""
