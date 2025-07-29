@@ -104,12 +104,3 @@ Examples:
 
 This is an educational project. You are free to modify and distribute it.
 
----
-
-## Credits
-
-Created by \[Your Name]. Powered by OpenAI, Python, and love for Iron Man.
-
----
-
-Feel free to contribute or suggest improvements!
