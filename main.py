@@ -4,7 +4,7 @@ import pyttsx3
 import webbrowser
 import datetime
 from openai import OpenAI
-from config import apikey 
+from config import apikey
 import time
 
 chatStr = ""
@@ -37,12 +37,12 @@ def takeCommand():
 def ai(prompt):
     """Send prompt to OpenAI's chat completion and speak/save response"""
     global chatStr
-    chatStr += f"User: {prompt}\nJarvis: "
+    chatStr += f"User: {prompt}\nKira: "
     try:
         response = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "You are Jarvis, a helpful AI assistant."},
+                {"role": "system", "content": "You are Kira, a helpful AI assistant."},
                 {"role": "user", "content": chatStr}
             ],
             temperature=0.7,
@@ -78,13 +78,13 @@ def greet_user():
         say("Good evening!")
     else:
         say("Hello!")
-    say("I am Jarvis. How can I help you?")
+    say("I am Kira. How can I help you?")
 
 if __name__ == '__main__':
-    print('Welcome to Jarvis A.I')
+    print('Welcome to Kira A.I')
     greet_user()
 
-    WAKE_WORD = "jarvis"
+    WAKE_WORD = " hey Kira"
 
     special_sites = {
         "youtube": "https://www.youtube.com",
@@ -136,7 +136,7 @@ if __name__ == '__main__':
                 current_time = datetime.datetime.now().strftime("%H:%M")
                 say(f"Sir, the time is {current_time}")
 
-            elif "exit" in query or "jarvis quit" in query:
+            elif "exit" in query or "Kira quit" in query:
                 say("Goodbye, sir!")
                 break
 
