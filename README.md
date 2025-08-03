@@ -1,12 +1,12 @@
-# 🤖 Jarvis A.I - Voice Activated Assistant
+# 🤖 Kira A.I - Voice Activated Assistant
 
-**Jarvis A.I** is a Python-based voice assistant that can recognize speech, speak responses, open websites, answer queries using OpenAI's GPT model, and respond based on time and context.
+**Kira A.I** is a Python-based voice assistant that can recognize speech, speak responses, open websites, answer queries using OpenAI's GPT model, and respond based on time and context.
 
 ---
 
 ## ✨ Features
 
-* 🗣️ Wake word activated ("Jarvis")
+* 🗣️ Wake word activated ("Kira")
 * 🌐 Opens popular websites like YouTube, Google, Facebook, etc.
 * 🧠 Answers general queries using OpenAI's GPT-3.5 Turbo
 * 🔊 Speaks responses using `pyttsx3`
@@ -46,8 +46,8 @@ pipwin install pyaudio
 ## 📁 Project Structure
 
 ```
-JarvisAI/
-├── jarvis.py           # Main Python script (your code)
+KiraAI/
+├── Kira.py           # Main Python script (your code)
 ├── config.py           # Stores OpenAI API key (add manually)
 ├── Openai/             # Stores AI chat logs with timestamps
 └── README.md           # This file
@@ -70,18 +70,18 @@ apikey = "your-openai-api-key"
 In terminal or command prompt:
 
 ```bash
-python jarvis.py
+python Kira.py
 ```
 
-### 3️⃣ Speak to Jarvis
+### 3️⃣ Speak to Kira
 
-Use the wake word "Jarvis" followed by your command.
+Use the wake word "Kira" followed by your command.
 
 Examples:
 
-* "Jarvis, open YouTube"
-* "Jarvis, what's the time?"
-* "Jarvis, who is Elon Musk?"
+* "Kira, open YouTube"
+* "Kira, what's the time?"
+* "Kira, who is Elon Musk?"
 
 ---
 
